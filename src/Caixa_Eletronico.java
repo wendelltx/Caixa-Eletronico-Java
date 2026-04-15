@@ -8,7 +8,9 @@ public class Caixa_Eletronico {
 		
 		minhaConta.titular="João";
 		minhaConta.saldo=100.00;
-		System.out.println(minhaConta.titular + "\n" + minhaConta.saldo);
+		
+		String saldoFormatado = String.format("%.2f", minhaConta.saldo);
+		System.out.println(minhaConta.titular + "\n" + "R$" + saldoFormatado);
 		
 	}
 
